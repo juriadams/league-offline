@@ -4,12 +4,16 @@
   "description": "League Offline is a tool to vanish from your friendslist while playing games.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-win": "electron-packager . LeagueOffline --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"League Offline\""
   },
-  "author": "4dams",
-  "license": "ISC",
+  "author": "Juri Adams <juri@4da.ms>",
+  "license": "MIT",
   "dependencies": {
     "electron": "^1.7.9",
     "node-cmd": "^3.0.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^10.1.0"
   }
 }

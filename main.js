@@ -26,12 +26,13 @@ app.on('ready', function(){
     height: 300,
     frame: false,
     resizable: false,
-    movable: true
+    movable: true,
+    icon: path.join(__dirname, 'assets/offline_icon.png')
   });
 
   // Load HTML file into the window
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, './windows/mainWindow.html'),
+    pathname: path.join(__dirname, './assets/mainWindow.html'),
     protocol: 'file:',
     slashes: true
   }));
@@ -68,6 +69,12 @@ ipcMain.on('toggle', function(){
 
     console.log('Status has been set to: OFFLINE')
 
+    mainWindow.loadURL(url.format({
+      pathname: path.join(__dirname, './assets/offline.html'),
+      protocol: 'file:',
+      slashes: true
+    }));
+
   } else {
     status = 0
 
@@ -87,6 +94,12 @@ ipcMain.on('toggle', function(){
       }
     });
 
+    mainWindow.loadURL(url.format({
+      pathname: path.join(__dirname, './assets/mainWindow.html'),
+      protocol: 'file:',
+      slashes: true
+    }));
+
     console.log('Status has been set to: ONLINE');
   }
 });
@@ -99,6 +112,9 @@ ipcMain.on('minimize_app', function(){
   mainWindow.minimize();
 });
 
+
+// Raw console commands for firewall settings
+
 // netsh advfirewall firewall add rule name="LeagueOffline 5222" protocol=TCP dir=out remoteport=5222 action=block
 // netsh advfirewall firewall add rule name="LeagueOffline 5223" protocol=TCP dir=out remoteport=5223 action=block
 
@@ -107,7 +123,7 @@ ipcMain.on('minimize_app', function(){
 
 
 
-// Create menu
+// Create menu, currently hidden
 const mainMenuTemplate = [
   {
     label: 'File',

@@ -73,6 +73,12 @@ body {
   transition: all 0.7s ease 0s;
 }
 
+.btn:hover{
+  -webkit-transform: rotateZ(15deg);
+  -moz-transform: rotateZ(15deg);
+  transform: rotateZ(15deg);
+}
+
 .btn:focus {
   outline: 0;
 }

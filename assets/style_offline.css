@@ -1,5 +1,5 @@
 body {
-  background-image:url(pattern_green.png);
+  background-image:url(pattern_red.png);
 }
 
 .header_top {
@@ -36,7 +36,7 @@ body {
 .toggle_button {
   background-color: #FFFFFF; /* Green */
   border: none;
-  color: #8acb88;
+  color: #e94132;
   padding: 10px 22px;
   text-align: center;
   text-decoration: none;
@@ -73,6 +73,12 @@ body {
   transition: all 0.7s ease 0s;
 }
 
+.btn:hover{
+  -webkit-transform: rotateZ(15deg);
+  -moz-transform: rotateZ(15deg);
+  transform: rotateZ(15deg);
+}
+
 .btn:focus {
   outline: 0;
 }
@@ -87,7 +93,7 @@ body {
 
 .warning:hover {
   color: #fff;
-  background-color: rgba(255,0,0,0.4);
+  background-color: rgba(0,0,0,0.4);
   border-radius: 4px;
   opacity: 100%;
 }
