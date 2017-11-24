@@ -10,7 +10,8 @@ Since the goal was to keep this app as "clean" as possible, there were only 4 co
 - `#e59246` Orange // For errors
 
 # To do
-- [ ] Error handling
+- [x] Error handling
 - [ ] Working GitHub link next to control buttons
 - [ ] Popup message for exclamation mark icon
+- [ ] Merge all stylesheets and app.js' into one big file
 - [ ] Add cookies
