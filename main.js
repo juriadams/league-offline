@@ -53,6 +53,13 @@ ipcMain.on('toggle', function(){
 
     cmd.get('netsh advfirewall firewall add rule name="LeagueOffline 5222" protocol=TCP dir=out remoteport=5222 action=block', function(err, data, stderr){
       if (err) {
+
+        mainWindow.loadURL(url.format({
+          pathname: path.join(__dirname, './assets/error.html'),
+          protocol: 'file:',
+          slashes: true
+        }));
+
         console.log('An error has occured creating the firewall rules:\n' + data);
       } else {
         console.log('Successfully added Firewall Rule blocking port 5222');
@@ -61,6 +68,13 @@ ipcMain.on('toggle', function(){
 
     cmd.get('netsh advfirewall firewall add rule name="LeagueOffline 5223" protocol=TCP dir=out remoteport=5223 action=block', function(err, data, stderr){
       if (err) {
+
+        mainWindow.loadURL(url.format({
+          pathname: path.join(__dirname, './assets/error.html'),
+          protocol: 'file:',
+          slashes: true
+        }));
+
         console.log('An error has occured creating the firewall rules:\n' + data);
       } else {
         console.log('Successfully added Firewall Rule blocking port 5223');
@@ -80,6 +94,13 @@ ipcMain.on('toggle', function(){
 
     cmd.get('netsh advfirewall firewall delete rule name="LeagueOffline 5223"', function(err, data, stderr){
       if (err) {
+
+        mainWindow.loadURL(url.format({
+          pathname: path.join(__dirname, './assets/error.html'),
+          protocol: 'file:',
+          slashes: true
+        }));
+
         console.log('An error has occured creating the firewall rules:\n' + data);
       } else {
         console.log('Successfully removed Firewall Rule blocking port 5223');
@@ -88,6 +109,13 @@ ipcMain.on('toggle', function(){
 
     cmd.get('netsh advfirewall firewall delete rule name="LeagueOffline 5222"', function(err, data, stderr){
       if (err) {
+
+        mainWindow.loadURL(url.format({
+          pathname: path.join(__dirname, './assets/error.html'),
+          protocol: 'file:',
+          slashes: true
+        }));
+
         console.log('An error has occured creating the firewall rules:\n' + data);
       } else {
         console.log('Successfully removed Firewall Rule blocking port 5222');

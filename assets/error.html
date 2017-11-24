@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <!-- Title of the program -->
+  <title>Whoops!</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+  <link type="text/css" href="style_error.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Buttons for exiting and minimizing the program -->
+  <div class="controls">
+    <button type="button" id="github" class="btn"><i class="material-icons">bug_report</i></button>
+    <button type="button" id="minimize_app" class="btn"><i class="material-icons">expand_more</i></button>
+    <button type="button" id="exit_app" class="btn"><i class="material-icons">close</i></button>
+  </div>
+
+  <div class="warning">
+    <button type="button" id="warning" class="btn"><i class="material-icons">priority_high</i></button>
+  </div>
+
+  <!-- Headline of the program -->
+  <div>
+    <p class="header_top">Whoops! <b><b>Error!</b></b><p>
+    <p class="header_sub">An error has occured while <b>switching to offline mode</b></br>Please make sure you run the program with <b>Administrator privileges</b>!
+  </div>
+
+  <!-- Button to then switch to offline mode -->
+  <div class="toggle">
+    <button type="button" id="toggle" class="toggle_button">Close Program</button>
+  </div>
+
+  <!-- Script to communicate with the main process -->
+  <script src="app_error.js"></script>
+
+</body>
+
+</html>
