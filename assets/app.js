@@ -24,6 +24,15 @@ exit_app.addEventListener('click', function(){
 const minimize_app = document.getElementById('minimize_app')
 
 minimize_app.addEventListener('click', function(){
-  console.log('Exit button pressed!')
+  console.log('Minimize button pressed!')
   ipcRenderer.send('minimize_app');
+});
+
+
+// Button for closing the program
+const closer = document.getElementById('closer')
+
+closer.addEventListener('click', function(){
+  console.log('Exit button pressed!')
+  ipcRenderer.send('exit_app');
 });

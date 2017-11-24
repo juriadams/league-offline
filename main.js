@@ -38,10 +38,10 @@ app.on('ready', function(){
   }));
 
   // Building Menu from template
-  const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
+  //const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
 
   // Insert the Menu
-  Menu.setApplicationMenu(mainMenu);
+  //Menu.setApplicationMenu(mainMenu);
 
 });
 
