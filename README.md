@@ -4,7 +4,7 @@ League offline is a tool to vanish from your friend's friendslist. It temporaril
 # Minimalism is the key
 Since the goal was to keep this app as "clean" as possible, there were only 4 colors used in the development process of this app:
 
-- `ffffff` White // For texts
+- `#ffffff` White // For texts
 - `#e94132` Red // For "offline" mode
 - `#7fc07d` Green // For "online" mode
 - `#e59246` Orange // For errors
