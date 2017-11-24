@@ -32,16 +32,16 @@ app.on('ready', function(){
 
   // Load HTML file into the window
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, './assets/mainWindow.html'),
+    pathname: path.join(__dirname, './assets/online.html'),
     protocol: 'file:',
     slashes: true
   }));
 
   // Building Menu from template
-  //const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
+  const mainMenu = Menu.buildFromTemplate(mainMenuTemplate);
 
   // Insert the Menu
-  //Menu.setApplicationMenu(mainMenu);
+  Menu.setApplicationMenu(mainMenu);
 
 });
 
@@ -123,7 +123,7 @@ ipcMain.on('toggle', function(){
     });
 
     mainWindow.loadURL(url.format({
-      pathname: path.join(__dirname, './assets/mainWindow.html'),
+      pathname: path.join(__dirname, './assets/online.html'),
       protocol: 'file:',
       slashes: true
     }));
