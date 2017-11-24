@@ -1,0 +1,15 @@
+{
+  "name": "leagueoffline",
+  "version": "1.0.0",
+  "description": "League Offline is a tool to vanish from your friendslist while playing games.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "4dams",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.7.9",
+    "node-cmd": "^3.0.0"
+  }
+}
