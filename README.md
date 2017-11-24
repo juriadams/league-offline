@@ -2,8 +2,7 @@
 
 A standalone utility for staying invisible in other players friendslists.
 
-![https://i.4da.ms/6c8b1b9.png](https://i.4da.ms/6c8b1b9.png)
-![https://i.4da.ms/1302c6b.png](https://i.4da.ms/6c8b1b9.png)
+![https://i.4da.ms/1302c6b.png](https://i.4da.ms/1302c6b.png)
 
 ## Getting Started
 
