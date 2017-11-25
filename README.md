@@ -1,4 +1,4 @@
-# League Offline
+<p align="center"><img src="https://i.4da.ms/4445f0c.png"></p>
 
 <p align="center">A standalone utility for staying invisible in other players friendslists.</p>
 
