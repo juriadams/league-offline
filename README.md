@@ -1,4 +1,4 @@
-# League Offline
+<p align="center"># League Offline</p>
 
 <p align="center">A standalone utility for staying invisible in other players friendslists.</p>
 
