@@ -1,5 +1,4 @@
-<p align="center"><img src="https://i.4da.ms/l_offline_logo.png"></p>
-<p align="center"><img src="https://i.4da.ms/4445f0c.png"></p>
+<p align="center"><img src="https://i.4da.ms/l_offline_logo_2.png"></p>
 <p align="center">A standalone utility for staying under the radar while playing League of Legends.</br><i>- This app was also a challenge for myself and built in <b>less than 12 hours</b>. -</i></p>
 <p align="center"><img src="https://i.4da.ms/1302c6b.png"></p>
 
