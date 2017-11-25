@@ -39,10 +39,12 @@ This script will then package your own build into a folder called `release-build
 The design of the app was really important and the goal was to keep the look of the app as "clean" as possible. 
 That's why there are only 4 major colors used in the design of the app:
 
-- `#ffffff   White   // For texts`
-- `#e94132   Red     // For offline mode`
-- `#7fc07d   Green   // For online mode`
-- `#e59246   Orange  // For errors`
+```
+#ffffff   White   // For texts
+#e94132   Red     // For offline mode
+#7fc07d   Green   // For online mode
+#e59246   Orange  // For errors
+```
 
 
 ## Deployment
