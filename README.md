@@ -1,6 +1,6 @@
 <p align="center"><img src="https://i.4da.ms/4445f0c.png"></p>
 
-<p align="center">A standalone utility for staying invisible in other players friendslists.</p>
+<p align="center">A standalone utility for staying under the radar while playing [League of Legends](https://leagueoflegends.com/).</p>
 
 <p align="center"><img src="https://i.4da.ms/1302c6b.png"></p>
 
